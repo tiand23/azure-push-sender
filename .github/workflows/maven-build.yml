@@ -25,5 +25,10 @@ jobs:
     - name: Upload JAR
       uses: actions/upload-artifact@v3
       with:
+    - name: azure-push-sender-jar
+        path: target/*.jar
+        - name: Upload JAR
+      uses: actions/upload-artifact@v3
+      with:
         name: azure-push-sender-jar
         path: target/*.jar
